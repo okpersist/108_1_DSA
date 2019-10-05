@@ -86,13 +86,15 @@ I'm 汶穗。Here is my weekly learning notes. :)
     > 找到缺失值和重複值可以先存在一個變數內最後一起回傳  
 
 ### [setMatch code](https://github.com/okpersist/108_1_DSA/blob/master/week4/SetMismatch.py)
+###### [🔗CONTENTS](#content)
 
 ## Insertion Sort
 ## QuickSort
 ### []()
+###### [🔗CONTENTS](#content)
 
 ## Object Oriented Programming
-> why I'm learning this: 寫class一直遇到錯誤，所以來學更多Object Oriented Programming
+> why I'm learning this: 寫class一直遇到錯誤，所以來學更多Object Oriented Programming  
 > [教材: The Python Bible™ | Everything You Need to Program in Python](https://www.udemy.com/course/the-python-bible/) 
 
 ### What is class?
@@ -217,7 +219,33 @@ print(coin1)
 
 ### What if we want to create all the other objects? 
 `class inheritance and polymorphism`
+###### [🔗CONTENTS](#content)
 
+### Time Complexity & Space Complexity
+> Why we need to know time complexity and space complexity: 因為我們希望程式可以高效地幫助我們解決問題，而時間和空間複雜度是一個衡量效能程式的指標。
+
+#### Time Complexity
+1. def: 時間複雜度是一種粗略看出程式執行效能的表達式。通常以希臘字母`Ｏ()`表達。
+2. 時間複雜度以個別執行步驟作為一單元計算：不用秒數定義時間，而以步驟定義時間是為了在不同的硬體裝置或作業系統都能用相同的標準衡量程式的效能．讓不同的系統在同樣情況下可以被視為同樣的時間複雜度。
+3. 通常我們以 **最糟的情況** 來表達時間複雜度，讓人類可以直觀快速地判斷某個程式碼至少可以在`常數倍的__步驟`執行完畢。這樣的表現方式忽略了常數或是係數這種算式上細微的性質，因為我們的目標是大略地掌握`數據的增長趨勢`來判斷程式效能，也因此時間複雜度又稱為`漸進時間複雜度`。
+關於時間複雜度一個簡單的例子：
+```python
+def sayhi():
+    print('hi!')
+```
+上面這個程式碼片段無論n為多少，都只會執行一次，因此時間複雜度紀錄為`O(1)`，意思是這個程式只要一個步驟的執行時間。
+4. 表達的三原則：
+    * 只表示最高階的項式 #eg. 若一個程式所需要執行的步驟是 `5n^2+3n`，忽略 `3n` 此項
+    * 忽略係數對變數的影響，因為當數據往無限大逼近的時候，係數的影響非常小。#eg. 延續上例，去除`5n^2`的`5`，因此`5t^2+3t`的時間複雜度可表達為`O(n^2)`
+    * 若複雜度只有常數，用１取代該常數。
+
+
+#### Space Complexity
+1. def: 程式碼執行所占用的記憶體量，通常以變數量來計算。
 
 ## References
+1. [Day5：演算法｜如何衡量程式的效率？——論時間複雜度Time Complexity](https://ithelp.ithome.com.tw/articles/10203082)
+2. [初學者學演算法｜從時間複雜度認識常見演算法（一)](https://medium.com/appworks-school/%E5%88%9D%E5%AD%B8%E8%80%85%E5%AD%B8%E6%BC%94%E7%AE%97%E6%B3%95-%E5%BE%9E%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6%E8%AA%8D%E8%AD%98%E5%B8%B8%E8%A6%8B%E6%BC%94%E7%AE%97%E6%B3%95-%E4%B8%80-b46fece65ba5)
+3. [時間複雜度wiki](https://zh.wikipedia.org/wiki/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6)
+
 ###### [🔗CONTENTS](#content)
