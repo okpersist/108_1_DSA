@@ -94,7 +94,9 @@ I'm 汶穗。Here is my weekly learning notes. :)
 
 ## Object Oriented Programming
 > why I'm learning this: 寫class一直遇到錯誤，所以來學更多Object Oriented Programming
+> [教材: The Python Bible™ | Everything You Need to Program in Python](https://www.udemy.com/course/the-python-bible/) 
 
+### What is class?
 1.	我們可以用物件導向程式設計(Object Oriented Programming)來模擬真實世界的東西
 2.	`類別class`: 在OOP中創造真實物件的模板或藍圖
 3.	`狀態State` & `方法Method`: 前者是在OOP中真實物件的狀態，後者指該真實物件涉及的相關動作，此動作可能會改變物件本身的狀態
@@ -109,8 +111,114 @@ I'm 汶穗。Here is my weekly learning notes. :)
 7.	我們可用`方法Method`定義`物件的行為Behavior of object`
 8.	我們可以'實體化'一個類別來'創造'個別的物件
 
+#### Example 1
+```python
+class ntd1:
+    value = 1.00
+    color = 'gold'
+    num_edges = 1
+    diameter = 20.0 #mm
+    weight = 3.8 #g
+    head = True #True代表人頭面，False代表數字面
 
-## reference
-1. > [The Python Bible™ | Everything You Need to Program in Python](https://www.udemy.com/course/the-python-bible/) 
+coin1 = ntd1()
+print(type(coin1)) #<class '__main__.ntd'>
+print(coin1.value) #1.0
 
+coin1.color = 'green'
+print(coin1.color) #green
+coin2 = ntd1()
+print(coin2.color) #gold
+```
+藉由這個例子可以了解:
+1. 我們可以利用`類別class`創造很多個一樣屬性的物件，但可以在隨後更改物件的性質而不影響到其他物件
+
+### How to change states of object by a line of code?
+> Why we need to know this: 我們可以藉由定義`方法Method`更有效率地改變物件的狀態或是對物件執行動作(or物件自己做出動作)
+> 此環節將學到類別的 `建構子Constructor` & `解構子Destructor`
+
+#### Example 2
+```python
+class ntd1:
+    def __init__(self,rare=False): #建構子的寫法
+        if rare:
+        	self.value = 1.25
+        else:
+        	self.value = 1.00
+        self.color = 'gold'
+        self.num_edges = 1
+        self.diameter = 20.0 
+        self.weight = 3.8 
+        self.head = True 
+
+coin1 = ntd1(rare=True)
+coin2 = ntd1()
+print(coin1.value)
+print(coin2.value)
+```
+藉由這個例子可以了解:
+1. 我們可以藉由建構子傳入參數有效率的更改物件的狀態
+2. `self`指涉某個類別中的實體物件，`self.`接在`.`後面的文字串表現了該實體的屬性
+3. `建構子Constructor`方法不會回傳值
+
+#### Example 3
+```python
+class ntd1:
+    def __init__(self,rare=False): #建構子的寫法
+        if rare:
+        	self.value = 1.25
+        else:
+        	self.value = 1.00
+        self.color = 'gold'
+        self.num_edges = 1
+        self.diameter = 20.0 
+        self.weight = 3.8 
+        self.head = True 
+       　
+    def rust(self):
+        self.color = 'green'
+
+coin1 = ntd1()
+coin2 = ntd1()
+print(coin1.color)
+print(coin2.color)
+
+coin1.rust()
+print(coin1.color)
+print(coin2.color)
+```
+藉由這個例子可以了解:
+1. 任何方法的第一個參數都一定有self，也就是實體本身(也可以定義其他的名字來替代實體，但一般人大都使用self)
+
+#### Example 4
+```
+class ntd1:
+    def __init__(self,rare=False): #建構子的寫法
+        if rare:
+        	self.value = 1.25
+        else:
+        	self.value = 1.00
+        self.color = 'gold'
+        self.num_edges = 1
+        self.diameter = 20.0 
+        self.weight = 3.8 
+        self.head = True 
+     　
+    def __del__(self):
+        print('Coin Spent!!')
+        
+coin1 = ntd1()
+print(coin1)
+del coin1
+print(coin1)
+```
+藉由這個例子可以了解:
+1. `解構子Destructor` 的定義方式是 'def __del__():'
+2. `解構子Destructor`的呼叫方式是輸入 `del 變數名`
+
+### What if we want to create all the other objects? 
+`class inheritance and polymorphism`
+
+
+## References
 ###### [🔗CONTENTS](#content)
