@@ -5,8 +5,26 @@ I'm 汶穗。Here is my weekly learning notes. :)
 
 # Content
 - [week 2](#week-2)
+    - [References](#reference)
 - [week 3](#week-3)
+    - [Key takeaway](#key-takeaway)
+    - [References](#reference)
 - [week 4](#week-4)
+    - [setmatch](#setmatch)
+        - [ideas](#ideas)
+        - [setMatch code](https://github.com/okpersist/108_1_DSA/blob/master/week4/SetMismatch.py)
+    - [Insertion Sort](#insertion-sort)
+    - [QuickSort](#quicksort)
+    - [Object Oriented Programming](#object-oriented-programming)
+        - [What is class?](#what-is-class)
+        - [How to change states of object by a line of code?](#how-to-change-states-of-object-by-a-line-of-code)
+        - [What if we want to create all the other objects?](#what-if-we-want-to-create-all-the-other-objects)
+        - [Time Complexity & Space Complexity](#time-complexity--space-complexity)
+            - [Time Complexity](#time-complexity)
+            - [Space Complexity](#space-complexity)
+    - [References](#references)
+
+    
 
 # week 2
  > Topic: Design a linked list
@@ -39,6 +57,8 @@ I'm 汶穗。Here is my weekly learning notes. :)
 
 ###### [🔗CONTENTS](#content)
 
+---
+---
 # week 3
  > Topic : Stack and Queue
 
@@ -68,6 +88,8 @@ I'm 汶穗。Here is my weekly learning notes. :)
 
 ###### [🔗CONTENTS](#content)
 
+---
+---
 # week 4
 ## setmatch
 ### ideas
@@ -88,13 +110,13 @@ I'm 汶穗。Here is my weekly learning notes. :)
 ### [setMatch code](https://github.com/okpersist/108_1_DSA/blob/master/week4/SetMismatch.py)
 ###### [🔗CONTENTS](#content)
 
+---
 ## Insertion Sort
 ## QuickSort
 ### []()
 ###### [🔗CONTENTS](#content)
 
 ---
-
 ## Object Oriented Programming
 > why I'm learning this: 寫class一直遇到錯誤，所以來學更多Object Oriented Programming  
 > [教材: The Python Bible™ | Everything You Need to Program in Python](https://www.udemy.com/course/the-python-bible/) 
@@ -219,10 +241,13 @@ print(coin1)
 1. `解構子Destructor` 的定義方式是 'def __del__():'
 2. `解構子Destructor`的呼叫方式是輸入 `del 變數名`
 
+---
 ### What if we want to create all the other objects? 
 > class `inheritance` and `polymorphism` can help us solve this problem. (繼承與多型)
 
 1. 使用`繼承inheritance`可以幫助我們讓子類別輕鬆地複製原類別定義的屬性和方法而不用重新寫一次
+2. 使用可變參數`*args`和`**kwargs`可幫助繼承有效率地被使用。
+#### Example 1 
 
 
 
@@ -258,6 +283,7 @@ def sayhi():
 ## References
 1. [Day5：演算法｜如何衡量程式的效率？——論時間複雜度Time Complexity](https://ithelp.ithome.com.tw/articles/10203082)
 2. [初學者學演算法｜從時間複雜度認識常見演算法（一)](https://medium.com/appworks-school/%E5%88%9D%E5%AD%B8%E8%80%85%E5%AD%B8%E6%BC%94%E7%AE%97%E6%B3%95-%E5%BE%9E%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6%E8%AA%8D%E8%AD%98%E5%B8%B8%E8%A6%8B%E6%BC%94%E7%AE%97%E6%B3%95-%E4%B8%80-b46fece65ba5)
-3. [時間複雜度wiki](https://zh.wikipedia.org/wiki/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6)
+3. [時間複雜度wiki](https://zh.wikipedia.org/wiki/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6)  
+4. [`*args` 和 `**kwargs` 是什麼？一次搞懂它們!](https://skylinelimit.blogspot.com/2018/04/python-args-kwargs.html)
 
 ###### [🔗CONTENTS](#content)
