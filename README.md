@@ -218,7 +218,7 @@ print(coin2.color)
 #### Example 4
 ```
 class ntd1:
-    def __init__(self,rare=False): #建構子的寫法
+    def __init__(self,rare=False): #
         if rare:
         	self.value = 1.25
         else:
@@ -248,7 +248,55 @@ print(coin1)
 1. 使用`繼承inheritance`可以幫助我們讓子類別輕鬆地複製原類別定義的屬性和方法而不用重新寫一次
 2. 使用可變參數`*args`和`**kwargs`可幫助繼承有效率地被使用。
 #### Example 1 
+```python
+import random
 
+class coin: #創建一個主類別
+	def __init__(self, rare= False, clean=True, Heads= True, **kwargs): #除了傳入預設參數外，也用`**kwargs`傳入多個不一樣的參數並打包成字典輸出
+
+		for key,value in kwargs.items(): #對於多個不特定參數
+			setattr(self,key,value)
+
+		self.is_rare = rare
+		self.is_clean = clean
+		self.heads = heads
+
+		if self.is_rare:
+			self.value = self.original_value * 1.25
+		else:
+			self.value = self.original_value
+
+		if self.is_clean:
+			self.color = self.clean_color
+		else:
+			self.color = self.rusty_color
+
+	def rust(self):
+		self.color = self.rusty_color
+
+	def clean(self):
+		self.color = self.clean_color
+
+	def __del__(self):
+		print('Coin Spent!')
+
+	def flip(self):
+		heads_options = [True,False]
+		choice = random.choice(heads_options)
+		self.heads = choice
+
+class onedollar(coin):
+	def __init__(self):
+		data = {
+		'original_value': 1.00,
+		'clean_color': 'gold',
+		'rusty_color': 'green',
+		'num_edges': 1,
+		'diameter': 20.0, #mm
+		'mass': 3.8
+		}
+	super().__init__(**data)
+```
 
 
 ###### [🔗CONTENTS](#content)
