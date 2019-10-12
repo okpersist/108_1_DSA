@@ -304,6 +304,25 @@ class onedollar(coin):
 2. 使用可變參數`*args`和`**kwargs`可幫助繼承有效率地被使用。
 3. `setattr(self,key,value)`的loop意同於個別設置 `self.key = value`，在此例中就是 `self.original_value = 1.00`、`self.clean_color = 'gold'`...等。
 
+#### Example 2
+```python
+class fivedollar(coin):
+	def __init__(self):
+		data = {
+		'original_value': 5.00,
+		'clean_color': 'sliver',
+		'rusty_color': None,
+		'num_edges': 1,
+		'diameter': 22.0, #mm
+		'mass': 4.4
+		}
+	super().__init__(**data) 
+	    def rust(self): #跟母類別重複的function，但此子類有自己的特殊性質因此另外定義
+	        self.color = self.clean_color
+```
+藉由這個例子可以了解:
+1. 多型：覆寫母類別已經定義的方法，意即同一個名字的function有多種不同型態，此時只要在子類別的`__init__()`定義即可。
+
 
 ###### [🔗CONTENTS](#content)
 
