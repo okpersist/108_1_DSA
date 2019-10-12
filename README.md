@@ -113,6 +113,11 @@ I'm 汶穗。Here is my weekly learning notes. :)
 ---
 ## Insertion Sort
 ## QuickSort
+### What is quicksort?
+1. 一種快速排序的方式。舉一串隨機排列的數字[99,3,1,5,11,8,52]來說，可以隨機挑選一個基準點，以基準點為中心，比基準點小的放到左邊，比基準點大的放到右邊，全部放好後在原基準點兩邊各選另一個基準點，重複上述的動作，直到所有數字被排整齊為止。
+### [作業code](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/week4/quicksort_04113020.ipynb)
+### [作業流程圖](https://github.com/okpersist/108_1_DSA/blob/master/week4/quicksort.svg)
+
 ### []()
 ###### [🔗CONTENTS](#content)
 
@@ -241,6 +246,7 @@ print(coin1)
 1. `解構子Destructor` 的定義方式是 'def __del__():'
 2. `解構子Destructor`的呼叫方式是輸入 `del 變數名`
 
+###### [🔗CONTENTS](#content)
 ---
 ### What if we want to create all the other objects? 
 > class `inheritance` and `polymorphism` can help us solve this problem. (繼承與多型)
