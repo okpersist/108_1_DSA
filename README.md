@@ -3,6 +3,10 @@ I'm 汶穗。Here is my weekly learning notes. :)
   * My [Learning check😀](https://hackmd.io/PFMjkciiRYuTuaYk77Be8Q?both)(Other related topics also put there.)
   * My [CS50 notes🖋](https://github.com/okpersist/CS50/tree/master/2013fall)
 
+# 本周作業傳送門(week4-HW1)
+1. [code](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/week4/quicksort_04113020.ipynb)
+2. [流程圖](https://github.com/okpersist/108_1_DSA/blob/master/week4/quicksort.svg)
+
 # Content
 - [week 2](#week-2)
   - [reference](#reference)
