@@ -3,10 +3,7 @@ I'm 汶穗。Here is my weekly learning notes. :)
   * My [Learning check😀](https://hackmd.io/PFMjkciiRYuTuaYk77Be8Q?both)(Other related topics also put there.)
   * My [CS50 notes🖋](https://github.com/okpersist/CS50/tree/master/2013fall)
 
-# 本周作業傳送門(week4-HW1)
-1. [code 網頁版](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/week4/quicksort_04113020.ipynb)，時間複雜度O(nlogn)
-2. [code Github版](https://github.com/okpersist/108_1_DSA/blob/master/week4/quicksort_04113020.ipynb)
-3. [流程圖](https://github.com/okpersist/108_1_DSA/blob/master/week4/quicksort.svg)
+# Week6還在努力還債中QQQQQQ
 
 # Content
 - [week 2](#week-2)
@@ -119,14 +116,14 @@ I'm 汶穗。Here is my weekly learning notes. :)
 [🔗CONTENTS](#content)
 
 ---
-## Insertion Sort
+## Insertion Sort(會努力還債QQ)
 ## QuickSort
 ### What is quicksort?
 1. 一種快速排序的方式。舉一串隨機排列的數字[99,3,1,5,11,8,52]來說，可以隨機挑選一個基準點，以基準點為中心，比基準點小的放到左邊，比基準點大的放到右邊，全部放好後在原基準點兩邊各選另一個基準點，重複上述的動作，直到所有數字被排整齊為止。
 ### [作業code](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/week4/quicksort_04113020.ipynb)
+### [code 網頁版](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/week4/quicksort_04113020.ipynb)，時間複雜度O(nlogn)
 ### [作業流程圖](https://github.com/okpersist/108_1_DSA/blob/master/week4/quicksort.svg)
 
-### []()
 [🔗CONTENTS](#content)
 
 ---
@@ -386,4 +383,4 @@ def sayhi():
 ### 建立Heap
 - 想法
 
-
+[🔗](#108_1_data-structure-and-algorithm)
