@@ -375,7 +375,13 @@ def sayhi():
 ---
 # Week6
 - Spyder debug mode
-	> 用debug mode除錯可以加速開發效率
+	- 用debug mode除錯可以加速開發效率
+	- 功能可分四大區塊，如下圖，可以在`View`的`Panes`內設定
+	![](https://i.imgur.com/FAMZtl2.png)
+	- 可以透過設定break point 一步一步執行程式除錯或理解程式
+	- 下圖是debug mode的按鈕，亦可用命令執行，由左到右分別是：開始測試、執行一個部分（如果是一個函式就執行完該函式）、進入函數、退出函數、執行到下一個中斷點、結束除錯模式
+	-![](https://i.imgur.com/JfSBAx6.png)
+
 - quicksort - recursive pseudocode
 - `eval`: 把字串形式的function集合併執行的方法
 
@@ -423,7 +429,8 @@ def sayhi():
 2. [Data Structures and Algorithms Bootcamp](https://www.udemy.com/course/data-structures-and-algorithms-bootcamp/)
 3. [堆排序維基百科](https://reurl.cc/XXmDxg)
 4. [Comparison Sort: Heap Sort(堆積排序法)](http://alrightchiu.github.io/SecondRound/comparison-sort-heap-sortdui-ji-pai-xu-fa.html)
+5. [spyder編輯器](http://epaper.gotop.com.tw/PDFSample/ACL052031.pdf)
+6. [Spyder调试python函数](http://www.ishenping.com/ArtInfo/2121767.html)
 
-## 練習中
-1. [學習歷程(尚未整理)](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/week6/Heapsort_04113020.ipynb)
+
 [🔗](#108_1_data-structure-and-algorithm)
