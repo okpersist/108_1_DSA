@@ -28,6 +28,13 @@ I'm 汶穗。Here is my weekly learning notes. :)
       - [Time Complexity](#time-complexity)
       - [Space Complexity](#space-complexity)
   - [References](#references)
+ - [Week6](#week6)
+   - [Heap Sort](#heap-sort)
+     - [What is Heap?](#what-is-heap)
+     - [When do we need Heap Sort？](#when-do-we-need-heap-sort)
+     - [Strengths and Weakness of heap sort](#strengths-and-weakness-of-heap-sort)
+     - [Make a heap sort algorithm!](#make-a-heap-sort-algorithm)
+  - [Reference](#reference)
 
     
 
