@@ -437,4 +437,14 @@ def sayhi():
 5. [spyder編輯器](http://epaper.gotop.com.tw/PDFSample/ACL052031.pdf)
 6. [Spyder调试python函数](http://www.ishenping.com/ArtInfo/2121767.html)
 
+## Merge Sort
+### What is the merge sort?
+### Strengths and Weakness of the merge sort
+### Make a merge sort algorithm!
+### Reference
+
+## 如何讀懂別人的程式?
+> 寫作業用debug mode研究別的人code時候常常遇到不解的程式邏輯，或者自己寫的時候常遇到難解的語法問題，可能問題太低級助教們也希望我可以自己多想想QQ，所以做了功課筆記在這！TIAN JU TZ JU JE! 🙋🏽
+
+
 [🔗](#108_1_data-structure-and-algorithm)
