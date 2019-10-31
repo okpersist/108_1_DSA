@@ -458,7 +458,7 @@ def sayhi():
     2. 某些情況下所需的空間比heap sort多
   
 ### Make a merge sort algorithm!
-```python=
+```python
 def merge(left, right):
     result = []
     while left and right:
@@ -538,5 +538,7 @@ if __name__ == "__main__":
 - [要如何快速地看別人寫的code啊](http://www.programmer-club.com.tw/ShowSameTitleN/c/24364.html)
 - [好文: 如何閱讀他人的程式碼](https://blog.longwin.com.tw/2009/05/paper-how-to-read-program-source-code-2009/)
 - [寫碼容易，讀碼難](https://www.inside.com.tw/article/4818-rework)
+- [一個平庸工程師的自白](https://www.inside.com.tw/article/4690-i-am-a-mediocre-programmer)
+
 
 [🔗](#108_1_data-structure-and-algorithm)
