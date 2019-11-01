@@ -22,9 +22,8 @@ I'm 汶穗。Here is my weekly learning notes. :)
   - [Heap sort v.s Merge sort](#heap-sort-vs-merge-sort)
   - [如何讀懂別人的code?](#%e5%a6%82%e4%bd%95%e8%ae%80%e6%87%82%e5%88%a5%e4%ba%ba%e7%9a%84code)
 - [Week8](#week8)
+  - [recursive concept](#recursive-concept)
   - [Linked Structure for Binary Tree](#linked-structure-for-binary-tree)
-  - [想法](#ideas)
-  - [練習](#practice)
   
 # week 2
  > Topic: Design a linked list
@@ -461,6 +460,8 @@ def sayhi():
 5. [spyder編輯器](http://epaper.gotop.com.tw/PDFSample/ACL052031.pdf)
 6. [Spyder调试python函数](http://www.ishenping.com/ArtInfo/2121767.html)
 
+[🔗](#108_1_data-structure-and-algorithm)
+
 ---
 ## Merge Sort
 ### What is the merge sort?
@@ -523,7 +524,11 @@ if __name__ == "__main__":
 2. [Comparison Sort: Merge Sort(合併排序法)](http://alrightchiu.github.io/SecondRound/comparison-sort-merge-sorthe-bing-pai-xu-fa.html)
 3. [合併排序-維基百科](https://zh.wikipedia.org/wiki/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F)
 
+[🔗](#108_1_data-structure-and-algorithm)
+
 ## Heap sort v.s Merge sort
+
+[🔗](#108_1_data-structure-and-algorithm)
 
 ---
 ## 如何讀懂別人的code?
@@ -555,7 +560,6 @@ if __name__ == "__main__":
     > 如果你真的什麼都做不了，告訴你一個小技巧 ：想想那些你完全不想碰的事情。再做手邊的事情就舒服多了。[name=Lan Langworth/ 前google工程師，Artillery cofounder and CTO]
 - ~~按住page down~~
 
-
 ### Reference
 - [讀別人的Code，去讀別人的程式，去看懂它。](http://scratch.gdps.ntpc.edu.tw/home/du-bie-ren-decode-qu-du-bie-ren-de-cheng-shi-qu-kan-dong-ta)
 - [閱讀他人的程式碼(1)─讀懂程式碼，使心法皆為我所用](https://www.ithome.com.tw/node/47717)
@@ -564,14 +568,24 @@ if __name__ == "__main__":
 - [寫碼容易，讀碼難](https://www.inside.com.tw/article/4818-rework)
 - [一個平庸工程師的自白](https://www.inside.com.tw/article/4690-i-am-a-mediocre-programmer)
 
+[🔗](#108_1_data-structure-and-algorithm)
+
 ---
 # Week8
+- [Week 8](#week-8)
+  - [recursive concept](#recursive-concept)
+  - [Linked Structure for Binary Tree](#linked-structure-for-binary-tree)
+    - [Ideas](#%e6%83%b3%e6%b3%95)
+    - [Practice](#practice)
+## Recursive Concept
+> 源自於自己的debug問題所以回來補
+
 ## Linked Structure for Binary Tree
-## ideas
+### ideas
 - 先建立節點，節點的屬性有:`index`, `left`, `right`, `val`
 - 節點可以執行的動作: `count_len`算長度(也可以視為 `find_height` ), `add_left` or `add_right`新增左右節點, `insert`在指定位置插入節點, `del`刪除節點, `replace`覆蓋節點原本的值
   
-## Practice
+### Practice
 ```python
 class Node:
   def __init__(self, val):
