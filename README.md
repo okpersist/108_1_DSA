@@ -577,8 +577,24 @@ if __name__ == "__main__":
   - [Linked Structure for Binary Tree](#linked-structure-for-binary-tree)
     - [Ideas](#%e6%83%b3%e6%b3%95)
     - [Practice](#practice)
-## Recursive Concept
-> 源自於自己的debug問題所以回來補
+## Recursion
+> 源自於自己的debug問題所以回來補。從前面的QuickSort, HeapSort, MergeSort, 其實都有運用到遞迴的概念。
+
+### Key Concept
+- 一句話解釋遞迴 -- `Divide and Conquer(又名分治法)` : 遞迴就是把一個大問題拆分成小問題，用一個或一組方法解決完小問題，大問題也隨之解決的重複過程。
+- <font color=#41D3BD>**呼叫自己**</font>: 只要某個函式會重複呼叫自己本身，即可視為一種遞迴。
+- 遞迴的組成：
+    - 自我呼叫的方式
+    - 終止條件
+- 遞迴相關的電腦底層運作:
+> 電腦必須要利用記憶體先替你記住這一層的中間值，然後去下一層繼續進行計算，直到終止條件被滿足。[name=Yu-Hsuan Chou @Medium]
+::: warning
+🎆這就是我debug mode無法理解別人code的部分!
+:::
+
+### Reference
+- [x][Python 初學第八講 — 遞迴](https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-11ed5d300d3d)
+- [x][Python 初學第七講 — 函式](https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-244862d98c18) 
 
 ## Linked Structure for Binary Tree
 ### ideas
@@ -601,8 +617,6 @@ class Node:
 
   def replace(self, node):
     
-
-
   def add_left(self, node):
     if self.left == None:
       self.left = node
