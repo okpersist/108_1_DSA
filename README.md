@@ -4,8 +4,6 @@ I'm 汶穗。Here is my weekly learning notes. :)
   * My [CS50 notes🖋](https://github.com/okpersist/CS50/tree/master/2013fall)
 
 # HW
-> Inspired by [偉傑](https://github.com/sefx5ever/Week1_DSA.git)
-
 🖋本周其他惡補: [如何讀懂別人的code?](#%e5%a6%82%e4%bd%95%e8%ae%80%e6%87%82%e5%88%a5%e4%ba%ba%e7%9a%84code)/ [recursive concept](#recursion)
 
 WK | TOPIC | 🔗
@@ -13,6 +11,8 @@ WK | TOPIC | 🔗
 4 | Quicksort | [Notes](#what-is-quicksort)/[HW code](#%e4%bd%9c%e6%a5%adcode)/[流程圖](#%e4%bd%9c%e6%a5%ad%e6%b5%81%e7%a8%8b%e5%9c%96)
 6 | Heapsort  | [Notes](#heap-sort)/
 6 | Mergesort | [Notes](#merge-sort)/[HW code](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/week6/Mergesort_04113020.ipynb)
+
+> Table inspired by [偉傑](https://github.com/sefx5ever/Week1_DSA.git)
 
 # Content
 - [week 2](#week-2)
