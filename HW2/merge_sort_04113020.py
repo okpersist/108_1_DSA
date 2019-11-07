@@ -1,6 +1,6 @@
 # 原創程式碼
 
-nums = [1, 4, 2, 3.6]
+# nums = [1, 4, 2, 3.6] 原本自己測試用的
 class Solution(object):
     def divide(self, nums):    
         if len(nums)<2:
@@ -33,5 +33,6 @@ class Solution(object):
         ans = self.divide(nums)
         print(ans)
         
-A = Solution()
-A.merge_sort(nums)
+# A = Solution() #####原本自己測試用的
+# A.merge_sort(nums)
+List[int] = Solution().merge_sort(nums)
