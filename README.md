@@ -11,6 +11,7 @@ WK | TOPIC | 🔗
 4 | Quicksort | [Notes](#what-is-quicksort)/[HW code](#%e4%bd%9c%e6%a5%adcode)/[流程圖](#%e4%bd%9c%e6%a5%ad%e6%b5%81%e7%a8%8b%e5%9c%96)
 6 | Heapsort | [Notes](#heap-sort)/[HW code](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/HW2/Heapsort_04113020_learning.ipynb)/[流程圖](https://github.com/okpersist/108_1_DSA/blob/master/week6/heapsort_flow_chart.md)
 6 | Mergesort | [Notes](#merge-sort)/[HW code](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/HW2/Mergesort_04113020_learning.ipynb)/[流程圖](https://github.com/okpersist/108_1_DSA/blob/master/week6/mergesort_flow_chart.md)
+0 | Binary Search Tree |  
 
 > Table inspired by [偉傑](https://github.com/sefx5ever/Week1_DSA.git)
 
@@ -33,6 +34,9 @@ WK | TOPIC | 🔗
 - [Week8](#week8)
   - [recursive concept](#recursion)
   - [Linked Structure for Binary Tree](#linked-structure-for-binary-tree)
+- [Week9](#week9)
+  - [What is BST?](#what-is-bst?)
+  - [Depth First Traversal](#Depth-First-Traversal)
   
 # week 2
  > Topic: Design a linked list
@@ -599,4 +603,55 @@ class Node:
       self.replace(node)
 # class BinaryTree:
 ```
+[🔗](#108_1_data-structure-and-algorithm)
+
+---
+# Week9
+## What is BST?
+- $BST$全名是$Binary$ $Search$ $Tree$是一種基於二元樹的樹狀結構，用以效率的尋找所需的資料，時間複雜度為$O(logn)$。
+- 一棵合理的BST滿足以下條件:
+    - 每個節點都要有顏色
+    - 根節點要是黑色
+    - 每個葉節點底下都預設有`null`節點，且`null`節點必須是黑色
+    - 每個分支的黑色節點數量要一致
+
+:::info
+🖋**保持平衡並非二元搜尋樹的必要條件**:
+　　無論新增或刪除值，不一定要讓樹一直保持在平衡的狀態(平衡的狀態代表子樹的最大長度差距不超過一，在原本最深層所有葉節點尚未被填滿之前不能把節點放到下層，此時要透過旋轉來滿足此條件)在紅黑樹中才要求樹要保持平衡。
+:::
+
+- BST可執行的function:
+    - Traversal | 走訪:
+        - 走訪是一種拜訪節點的系統化方式，不同的走訪方式可以幫助我們快速從節點找到我們要的資料（許多資料庫的原型就是建基於二元搜尋樹，把節點內儲存的東西換成各式資料而已）
+        - Depth First | 以深度優先的搜尋: 分成inorder/preorder/postorder三種
+        - Breathe First | 以廣度為優先的搜尋: 以某個節點為搜尋起點，從該起點同一深度的節點走訪完到下層，直到走訪到目標節點。
+    - `insert()`新增: 新增節點，讓所有節點依照二元搜尋樹的規則排列好。
+    - `modify()`修改: 把所有具有相同值得節點改成另一個值，並讓更新後的所有節點依照二元搜尋樹的規則排列好。
+    - `delete()`刪除: 刪除指定的節點，並讓剩下的節點依照二元搜尋樹的規則排列好。
+    - `search()`查詢: 搜尋某個節點的值
+
+## Depth First Traversal 
+- inorder: Top-down的走訪方式，由下而上從 `left` 開始走訪，依照 `left`->`root`->`right` 的方式走訪節點。左邊下面的子樹走訪完到`root`後再由上而下依照`left`->`root`->`right` 的方式走放右邊的子樹。
+- preorder: Top-down的走訪方式，從最上面的 `root` 開始走訪，依照 `root`->`left`->`right` 的方式走訪節點。一樣從左邊的子樹開始，先把所有的`left`走完，再所有左子樹都走完的情況下開始走右子樹。
+- postorder: bottom-up的走訪方式，從最後一個 `left` 開始走訪，依照 `left`->`right`->`root` 的方式走訪節點。每個子樹走訪完遇到`null`才回到上一層依照`left`->`right`->`root` 的方式繼續走訪節點
+
+## 如何畫程式流程圖
+> 之前只會畫變數流程圖，想開始練習程式流程圖。
+- 建構程式流程圖的基本符號，最常用到的是最左邊那行
+![](https://i.imgur.com/dVCMHaf.png)
+- [name=[Flowchart design. @ concept draw](https://www.conceptdraw.com/How-To-Guide/flowchart-design)]
+- 使用標準符號把程式流程與邏輯表達出來即可！
+![](https://i.imgur.com/CmKsw0b.jpg)
+
+## Practice
+> Ideas
+nums = [5, -5, 1, -10, 3]
+- `insert()`:把第一個插入的值設成head，其他依照大小放到二元分類樹規則下的地方
+
+### HW
+- `modify()`: 要求讓更改後的樹最大長度不超過原本樹深度，且所有相同的值都要被修改到(比如今天原本的BST中有三個3，今天`update()`3改成10，所有BST中的3都要改成10)
+- `search()`: 要求在找尋值的時候，若遇到相同的值，返回離`root`最近的一個值就好。
+- [HW link](https://docs.google.com/presentation/d/e/2PACX-1vQgUh73yvSdxAvMH50DHWJ5lsCX8-daMxtoltU9rYW7xCmqYz2A1wOv0Vcx_F9KO5ZUvZBv3IF1TjGi/pub?start=false&loop=false&delayms=3000&slide=id.g73e451e679_0_18)
+- [How to download ppt by link](https://www.free-power-point-templates.com/articles/how-to-generate-a-link-to-download-a-google-slides-presentation-as-powerpoint/)
+
 [🔗](#108_1_data-structure-and-algorithm)
