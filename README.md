@@ -4,7 +4,7 @@ I'm 汶穗。Here is my weekly learning notes. :)
   * My [CS50 notes🖋](https://github.com/okpersist/CS50/tree/master/2013fall)
 
 # HW
-🖋本周其他惡補: [如何讀懂別人的code?](#%e5%a6%82%e4%bd%95%e8%ae%80%e6%87%82%e5%88%a5%e4%ba%ba%e7%9a%84code)/ [recursive concept](#recursion)
+🖋
 
 WK | TOPIC | 🔗
 -- | :---: | --
@@ -12,8 +12,6 @@ WK | TOPIC | 🔗
 6 | Heapsort | [Notes](#heap-sort)/[HW code](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/HW2/Heapsort_04113020_learning.ipynb)/[流程圖](https://github.com/okpersist/108_1_DSA/blob/master/week6/heapsort_flow_chart.md)
 6 | Mergesort | [Notes](#merge-sort)/[HW code](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/HW2/Mergesort_04113020_learning.ipynb)/[流程圖](https://github.com/okpersist/108_1_DSA/blob/master/week6/mergesort_flow_chart.md)
 9 | Binary Search Tree |  [Notes](#binary-search-tree)/[HW code](https://github.com/okpersist/108_1_DSA/blob/master/HW3/binary_search_tree_04113020.py)/[學習歷程&圖](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/HW3/binary_search_tree_learning_04113020.ipynb)
-
-> Table inspired by [偉傑](https://github.com/sefx5ever/Week1_DSA.git)
 
 # Content
 - [week 2](#week-2)
