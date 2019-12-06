@@ -1,7 +1,6 @@
-"""
-author: 汶穗
-period: 19.11.23 - 19.12.06
-"""
+# author: 汶穗
+# period: 19.11.23 - 19.12.06
+
 from Crypto.Hash import MD5
 
 class ListNode:
