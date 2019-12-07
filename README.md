@@ -12,6 +12,7 @@ WK | TOPIC | 🔗
 6 | Heapsort | [Notes](#heap-sort)/[HW code](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/HW2/Heapsort_04113020_learning.ipynb)/[流程圖](https://github.com/okpersist/108_1_DSA/blob/master/week6/heapsort_flow_chart.md)
 6 | Mergesort | [Notes](#merge-sort)/[HW code](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/HW2/Mergesort_04113020_learning.ipynb)/[流程圖](https://github.com/okpersist/108_1_DSA/blob/master/week6/mergesort_flow_chart.md)
 9 | Binary Search Tree |  [Notes](#binary-search-tree)/[HW code](https://github.com/okpersist/108_1_DSA/blob/master/HW3/binary_search_tree_04113020.py)/[學習歷程&圖](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/HW3/binary_search_tree_learning_04113020.ipynb)
+11 | Hash Table | [Notes](#hash-table)/[HW code](https://github.com/okpersist/108_1_DSA/blob/master/HW4/hash_table_04113020.py)/[學習歷程](https://github.com/okpersist/108_1_DSA/blob/master/HW4/hash_table_04113020_learning.md)/[圖](https://github.com/okpersist/108_1_DSA/blob/master/week11/hash_table_flowchart.jpg)
 
 # Content
 - [week 2](#week-2)
@@ -35,7 +36,14 @@ WK | TOPIC | 🔗
 - [Week9](#week9)
   - [What is BST?](#what-is-bst?)
   - [Depth First Traversal](#Depth-First-Traversal)
-  
+- [Week11](#week11)
+  - [What is a Hash table?](#what-is-a-hash-table)
+  - [Hash Function](#hash-function)
+  - [Collision](#collision)
+  - [Hash & MD5](#hash--md5)
+
+---
+---
 # week 2
  > Topic: Design a linked list
 
@@ -395,6 +403,7 @@ def sayhi():
 [🔗](#108_1_data-structure-and-algorithm)
 
 ---
+---
 # Week6
 - [Week6](#week6)
   - [Heap Sort](#heap-sort)
@@ -548,6 +557,7 @@ def sayhi():
 [🔗](#108_1_data-structure-and-algorithm)
 
 ---
+---
 # Week8
 - [Week 8](#week-8)
   - [recursive concept](#recursive-concept)
@@ -604,6 +614,7 @@ class Node:
 [🔗](#108_1_data-structure-and-algorithm)
 
 ---
+---
 # Week9
 ## Binary Search Tree
 ## What is BST?
@@ -652,5 +663,79 @@ nums = [5, -5, 1, -10, 3]
 - `search()`: 要求在找尋值的時候，若遇到相同的值，返回離`root`最近的一個值就好。
 - [HW link](https://docs.google.com/presentation/d/e/2PACX-1vQgUh73yvSdxAvMH50DHWJ5lsCX8-daMxtoltU9rYW7xCmqYz2A1wOv0Vcx_F9KO5ZUvZBv3IF1TjGi/pub?start=false&loop=false&delayms=3000&slide=id.g73e451e679_0_18)
 - [How to download ppt by link](https://www.free-power-point-templates.com/articles/how-to-generate-a-link-to-download-a-google-slides-presentation-as-powerpoint/)
+
+[🔗](#108_1_data-structure-and-algorithm)
+
+---
+---
+# Week11
+- [Hash Table & Hash Function原理](#hash-table--hash-function%e5%8e%9f%e7%90%86)
+- [What is a Hash table?](#what-is-a-hash-table)
+  - [Dictionary](#dictionary)
+  - [Hash Table](#hash-table)
+  - [Hash Table搜尋的時間複雜度](#hash-table%e6%90%9c%e5%b0%8b%e7%9a%84%e6%99%82%e9%96%93%e8%a4%87%e9%9b%9c%e5%ba%a6)
+- [Hash Function](#hash-function)
+- [Collision](#collision)
+- [Hash & MD5](#hash--md5)
+  - [雜湊、加密、壓縮、編碼](#%e9%9b%9c%e6%b9%8a%e5%8a%a0%e5%af%86%e5%a3%93%e7%b8%ae%e7%b7%a8%e7%a2%bc)
+
+## Hash Table & Hash Function原理
+## What is a Hash table?
+> 先從了解字典概念開始理解hash table。
+
+### Dictionary
+- 字典($Dictionary$)是一種由`key`和`value`組成的資料結構。
+    - `key`可以理解成區別/識別資料的唯一值，
+    - `value`可理解為某種/組資料。
+    - 若想找到某組特定的資料`value`，找出資料`value`對應的`key`即可，可以用相對簡單的方式找到想要的資料(設定簡單的`key`來代替直接找尋複雜的資料)
+    
+### Hash Table
+- 如果每個資料`value`都要用一個`key`來存，那麼資料一多的時候就會有非常龐大的記憶體需求，而Hash Table的出現解決了此問題、是讓我們可以在減少記憶體使用的情況下達成有效率的搜尋或儲存資料的演算法。
+
+- Hash Table的核心精神是<font color=41D3BD>把資料分類儲存</font>：假設現在有n筆資料(n個`key`搭配n個`value`)，Hash Table的想法是可以把這些資料分類依照某種<font color=41D3BD>**分類規則**</font>存在m個箱子中，要找某筆資料的時候只要知道`key`被分在哪個箱子，就可以直接去該箱子取得資料。如下圖：
+    ![](https://i.imgur.com/FmykKu1.png)
+    -[Hash Table From Wikipedia](https://en.wikipedia.org/wiki/Hash_table)
+    圖中我們可以看到3個`key`分別被裝入三個箱子內(但wiki用籃子)。注意到3個`key`分別被裝入箱子前中間的`hash function`，這裡的`hash function`就是前面說的<font color=41D3BD>**分類規則**</font>。
+    
+### Hash Table搜尋的時間複雜度
+- 最快只要$O(1+\alpha)$ -> $O(1)$：$\alpha$是箱子平均的資料長度，意思是只要經過`hash function`一個步驟後，只要查詢平均箱子的長度就可以找到想要的資料。幸運的話，經過`hash function`一個步驟加上查詢箱子的第一個值就是目標值，時間複雜度是$O(1+1)$ = $O(2)$ -> $O(1)$
+- 最慢需要$O(n)$: 很不巧所有的資料都被分到同一個箱子，搜尋效果跟搜尋陣列差不多。
+    
+[🔗](#108_1_data-structure-and-algorithm)
+
+## Hash Function
+> 什麼是hash function?
+
+- 定義：`hash function`用數學的方式決定把資料分到哪一個箱子裡，來解決前述說的占用記憶體的問題。
+- 以上圖為例：我們可先把文字形式的`key`透過編碼轉成數字，然後用此編碼數字$mod$箱子的數量(在此例中箱子數量是15，所以用編碼後的數字除以15取其餘數)，就可以得知該把哪一組`key`對應的資料`value`一起放入餘數號碼的箱子。
+- 一個好的`hash function`要滿足2個條件：
+    1. 速度夠快。盡可能讓`key`經過`hash function`運算後可以平均地分布在不同的箱子內，是一種確保資料可以被更有效率的使用的方式。
+    2. `hash function`算出來的值不能多過箱子的數量，否則有的資料沒有箱子放。
+
+## Collision
+> 可能會出現把不同的東西要放在同一個箱子而產生衝突($Collision$)的情況，有兩種基本方式可以解決。
+
+- Chaining：把箱子內的元素串起來，如linked-list概念!把同個箱子內第一個之後的元素以linked-list的方式連接起來就可以避免掉覆蓋的問題，就可以避免查找時發生要找A結果是B的衝突情況發生。
+- Open Addressing: 找出下一個空的箱子，來避免同一個箱子內要放兩個資料的情況。
+
+[🔗](#108_1_data-structure-and-algorithm)
+
+## Hash & MD5 
+- Hash, 雜湊: 是一種把資料編碼成一段固定長度數字加符號(通常是英文文字)的技術。基本特性有幾點：
+    - 無論輸入資料的原文長短，得出的編碼值(又被稱為雜湊值)都會是一樣的長度
+    - 不同的演算法得到的固定長度可能不相同
+    - 相同的輸入值會得到相同的雜湊值
+    - 不同的輸入值可能得到相同雜湊值
+    - 相似的輸入值很大機率得到完全不同的雜湊值
+    - 雜湊是單向的編碼運算，無法逆推
+    - 破解雜湊值常用方法：暴力法，嘗試各種input另外建構包含輸入/輸出/演算法的output表(一般稱為彩虹表)，表的資料夠多就可以找到原始的輸入值。
+    - 防止暴力破解的方法：加鹽。在進行雜湊運算之前把資料任意地方插入字串(此時插入的字串被稱為鹽)，確保彩虹表對應出來的值還是無法還原成原本輸入值。
+- MD5, Message digest 5 algorithm: 是一種雜湊演算法，並非加密技術而屬於編碼的一種，常用於驗證資料或訊息的更動。因為雜湊常和加密一起討論所以常有誤用，更多資料參考自[加密和雜湊有什麼不一樣？](https://blog.m157q.tw/posts/2017/12/25/differences-between-encryption-and-hashing/)
+
+### 雜湊、加密、壓縮、編碼
+- 雜湊: 單向把資料輸出成另類形式的編碼，無法直接逆推原始資料
+- 加密: 有密鑰的皆可視為加密，可透過密鑰直接逆推回原始資料
+- 壓縮: 讓輸出資料的資料量比輸入資料小
+- 編碼: 只要是把原始資料有邏輯規律地轉換成另種文數字的形式都稱作編碼，雜湊/加密/壓縮都可視為編碼的一種，只是目的和形式依照演算法有所不同。
 
 [🔗](#108_1_data-structure-and-algorithm)
