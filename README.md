@@ -13,7 +13,7 @@ HW | WK | TOPIC | 🔗
 2 | 6 | Mergesort | [Notes](#merge-sort)/[HW code](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/HW2/Mergesort_04113020_learning.ipynb)/[流程圖](https://github.com/okpersist/108_1_DSA/blob/master/week6/mergesort_flow_chart.md)
 3 | 9 | Binary Search Tree |  [Notes](#binary-search-tree)/[HW code](https://github.com/okpersist/108_1_DSA/blob/master/HW3/binary_search_tree_04113020.py)/[學習歷程](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/HW3/binary_search_tree_learning_04113020.ipynb)/[圖](https://github.com/okpersist/108_1_DSA/blob/master/week9/BST_flowchart.jpg)
 4 | 11 | Hash Table | [Notes](#hash-table)/[HW code](https://github.com/okpersist/108_1_DSA/blob/master/HW4/hash_table_04113020.py)/[學習歷程](https://github.com/okpersist/108_1_DSA/blob/master/HW4/hash_table_04113020_learning.md)/[圖](https://github.com/okpersist/108_1_DSA/blob/master/week11/hash_table_flowchart.jpg)
-5 | 13 | Breadth Frist Search & Depth Frist Search | [Notes](#graph-&-bfs-&-dfs)/[HW code](https://github.com/okpersist/108_1_DSA/blob/master/HW5/BFS_04113020.py)/[學習歷程](https://github.com/okpersist/108_1_DSA/blob/master/HW5/BFS_DFS_04113020_learning.md)/[圖](https://github.com/okpersist/108_1_DSA/blob/master/week13/BFS%20%26%20DFS_flowchart.jpg)
+5 | 13 | Breadth Frist Search & Depth Frist Search | [Notes](#week-13)/[HW code](https://github.com/okpersist/108_1_DSA/blob/master/HW5/BFS_04113020.py)/[學習歷程](https://github.com/okpersist/108_1_DSA/blob/master/HW5/BFS_DFS_04113020_learning.md)/[圖](https://github.com/okpersist/108_1_DSA/blob/master/week13/BFS%20%26%20DFS_flowchart.jpg)
 
 # Content
 - [week 2](#week-2)
@@ -42,6 +42,11 @@ HW | WK | TOPIC | 🔗
   - [Hash Function](#hash-function)
   - [Collision](#collision)
   - [Hash & MD5](#hash--md5)
+- [Week13](#week-13)
+  - [Graph](#graph)
+  - [BFS 原理](#bfs-%e5%8e%9f%e7%90%86)
+  - [DFS 原理](#dfs-%e5%8e%9f%e7%90%86)
+  - [BFS v.s DFS](#bfs-vs-dfs)
 
 ---
 ---
