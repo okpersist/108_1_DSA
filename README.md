@@ -44,8 +44,8 @@ HW | WK | TOPIC | 🔗
   - [Hash & MD5](#hash--md5)
 - [Week13](#week-13)
   - [Graph](#graph)
-  - [BFS 原理](#bfs-%e5%8e%9f%e7%90%86)
-  - [DFS 原理](#dfs-%e5%8e%9f%e7%90%86)
+  - [What is BFS?](#bfs-%e5%8e%9f%e7%90%86)
+  - [What is DFS?](#dfs-%e5%8e%9f%e7%90%86)
   - [BFS v.s DFS](#bfs-vs-dfs)
 
 ---
