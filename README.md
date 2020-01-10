@@ -7,10 +7,9 @@
   * [學期心得🎁](https://github.com/okpersist/108_1_DSA/blob/master/week18/%E5%AD%B8%E6%9C%9F%E5%BF%83%E5%BE%97.md)
   * [HW🖋](#hw)
   * [每周上課內容🖋](#Content)
-  * [每周學習速記🖋](https://hackmd.io/PFMjkciiRYuTuaYk77Be8Q?both)
+  * [上課內容補充🖋](https://hackmd.io/PFMjkciiRYuTuaYk77Be8Q?both)(把上課概述或相關連結放此處，主要上課內容在上個項目‵每週上課內容‵)
   * [CS50 筆記🖋](https://github.com/okpersist/108_1_DSA/tree/master/CS50)
   * [Codesignal 筆記🖋](https://github.com/okpersist/108_1_DSA/tree/master/Codesignal)
-
   
 # HW
 HW | WK | TOPIC | 🔗
@@ -25,47 +24,63 @@ HW | WK | TOPIC | 🔗
 
 # Content
 > 這裡紀錄每周上課的內容
-
-- [week 2](#week-2)
-  - [reference](#reference)
-- [week 3](#week-3)
-  - [Key takeaway](#key-takeaway)
+- [Week 1](#week-1)
+  - [上課方式與計分規則說明](#week-1)
+- [Week 2](#week-2)
+  - [Linked-list](#reference)
+- [Week 3](#week-3)
+  - [Stack & Queue](#key-takeaway)
   - [reference](#reference-1)
-- [week 4](#week-4)
+- [Week 4 & 5](#week-4)
   - [setmatch](#setmatch)
   - [Insertion Sort](#insertion-sort)
-  - [QuickSort + HW1📝](#quicksort)
-  - [Object Oriented Programming](#object-oriented-programming)
-- [Week6](#week6)
-  - [Heap Sort + HW2📝](#heap-sort)
-  - [Merge Sort + HW2📝](#merge-sort)
+  - [Quciksort](#quicksort)
+  - [💡Object Oriented Programming](#object-oriented-programming)
+- [Week 6 & 7](#week6)
+  - [Heap Sort](#heap-sort)
+  - [Merge Sort](#merge-sort)
   - [Heap sort v.s Merge sort](#heap-sort-vs-merge-sort)
-  - [如何讀懂別人的code?](#%e5%a6%82%e4%bd%95%e8%ae%80%e6%87%82%e5%88%a5%e4%ba%ba%e7%9a%84code)
-- [Week8](#week8)
-  - [recursive concept](#recursion)
+  - [💡如何讀懂別人的code?](#%e5%a6%82%e4%bd%95%e8%ae%80%e6%87%82%e5%88%a5%e4%ba%ba%e7%9a%84code)
+- [Week 8](#week8)
+  - [💡recursive concept](#recursion)
   - [Linked Structure for Binary Tree](#linked-structure-for-binary-tree)
-- [Week9](#week9)
+- [Week 9](#week9)
   - [What is BST?](#what-is-bst?)
   - [Depth First Traversal](#Depth-First-Traversal)
-- [Week11](#week11)
+- [Week 10](#week-10)
+  - [Red Black Tree](#red-black-tree)
+- [Week 11](#week11)
   - [What is a Hash table?](#what-is-a-hash-table)
   - [Hash Function](#hash-function)
   - [Collision](#collision)
   - [Hash & MD5](#hash--md5)
-- [Week13](#week-13)
+- [Week 12 & 13](#week-13)
   - [Graph](#graph)
   - [What is BFS?](#bfs-%e5%8e%9f%e7%90%86)
   - [What is DFS?](#dfs-%e5%8e%9f%e7%90%86)
   - [BFS v.s DFS](#bfs-vs-dfs)
-- [Week15](#week-15)
+- [Week 14 & 15](#week-15)
   - [Dijkstra algorithm](#dijkstra-%e5%8e%9f%e7%90%86%e8%aa%aa%e6%98%8e)
   - [Shortest Path concept](#%e6%9c%80%e7%9f%ad%e8%b7%af%e5%be%91%e5%95%8f%e9%a1%8c%e5%ae%9a%e7%be%a9%e8%88%87%e5%88%86%e9%a1%9e)
   - [Kruskal algorithm](#kruskal-%e5%8e%9f%e7%90%86%e8%aa%aa%e6%98%8e)
   - [Minimum Spanning Tree concept](#%e6%9c%80%e5%b0%8f%e7%94%9f%e6%88%90%e6%a8%b9%e5%8e%9f%e7%90%86)
+- [Week 16](#week-16)
+  - [Overview](#overview)
+- [Week 17](#week-17)
+  - [Final Exam & blockchain sharing]
+- Week 18: 放假~
+
+---
+---
+# Week 1
+- [上課方式與計分規則說明](https://docs.google.com/presentation/d/e/2PACX-1vQyAFfgCNbBPBDWV_Xbahc2CtMBr_v-jfffAhaOWw2SntBRd2kJtLZZgdYoRfEZD7flCo4ilfO_msKX/pub?start=false&loop=false&delayms=3000&slide=id.p)
+
+[🔗](#108_1_data-structure-and-algorithm)
 
 ---
 ---
 # week 2
+- [Linked-list](https://docs.google.com/presentation/d/e/2PACX-1vTB218-EdUZ5jpNz6Uv4TOZQc37Y281v128_aRcWC6EhkTQs5bS8fh7yysmcuzb9R2QPN6_PDshFWL_/pub?start=false&loop=false&delayms=3000&slide=id.p)
  > Topic: Design a linked list
 
 1. What's class?
@@ -687,6 +702,14 @@ nums = [5, -5, 1, -10, 3]
 
 [🔗](#108_1_data-structure-and-algorithm)
 
+
+---
+---
+# Week 10
+- [Red Black Tree](https://docs.google.com/presentation/d/e/2PACX-1vRxyJRARq0BNuGJq_o2cUHIXBWrRSZrAOyXOSt9qCTSjQtyp8XqFq3VuNn3gCt3sXenOZmWLqIjcyFs/pub?start=false&loop=false&delayms=3000&slide=id.p)
+
+[🔗](#108_1_data-structure-and-algorithm)
+
 ---
 ---
 # Week11
@@ -1048,3 +1071,26 @@ $$\delta(S,y) \leqslant \delta(S,x) + w(x,y)$$
 |都使用貪心算法概念|每次都找從起點算起之最短的路徑，組成最終最短路徑|每次都找權重最小的邊，組合成最小生成樹|
 
 [🔗](#108_1_data-structure-and-algorithm)
+
+---
+---
+
+# Week 16
+# Overview
+- [課程回顧](https://docs.google.com/presentation/d/e/2PACX-1vSkbZghFr5Y3VG3b-BKCZiLNHyhcMIxFmNDHn-tgWQqH4vaGjulKASn_ex_LLDJwxPIRCacGQnBRYrI/pub?start=false&loop=false&delayms=3000&slide=id.p)
+
+[🔗](#108_1_data-structure-and-algorithm)
+
+---
+---
+
+# Week 17
+- [blockchain sharing]
+  - [簡大為作品 Demo](https://youtu.be/RqTTfm0vF4c)
+  - [陳偉傑作品 Demo](https://youtu.be/Ri3o0ZqYBmQ)
+  - [陳佳淳作品 Demo](https://youtu.be/DQT6R-27bDY)
+  
+[🔗](#108_1_data-structure-and-algorithm)
+
+# Week 18
+放假
