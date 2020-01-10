@@ -1,8 +1,15 @@
 # 108_1_Data Structure and Algorithm
-I'm 汶穗。Here is my weekly learning notes. :)
-  * My [Learning check😀](https://hackmd.io/PFMjkciiRYuTuaYk77Be8Q?both)(Other related topics also put there.)
-  * My [CS50 notes🖋](https://github.com/okpersist/CS50/tree/master/2013fall)
+我是汶穗，此Repository紀錄我修讀108年第1學期東吳巨資之資料結構與演算法課程的每週學習歷程。
+授課老師：蔡芸琤老師｜課堂助教：賴建郡／司福銘助教
 
+＃　Repository簡介
+  * About Me
+  * [學期心得]()
+  * [每周學習速記🖋](https://hackmd.io/PFMjkciiRYuTuaYk77Be8Q?both)(Other related topics also put there.)
+  * [CS50 筆記🖋](https://github.com/okpersist/108_1_DSA/tree/master/CS50)
+  * [Codesignal 筆記🖋](https://github.com/okpersist/108_1_DSA/tree/master/Codesignal)
+  * [HW🖋](#hw)
+  
 # HW
 🖋
 
