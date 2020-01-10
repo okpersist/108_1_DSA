@@ -182,13 +182,21 @@ HW | WK | TOPIC | 🔗
 [🔗](#108_1_data-structure-and-algorithm)
 
 ---
-## Insertion Sort(會努力還債QQ)
+## Insertion Sort
+- [Insertion sort](https://docs.google.com/presentation/d/e/2PACX-1vQOTMDM-5-OUaGfnLUOFVgefFwSVRplSwnbicp0CXOQrB5H8RM_1Aq8o_4JxHlncEmhjvqk3tzcoB7s/pub?start=false&loop=false&delayms=3000&slide=id.p)
+
 ## QuickSort
 ### What is quicksort?
-1. 一種快速排序的方式。舉一串隨機排列的數字[99,3,1,5,11,8,52]來說，可以隨機挑選一個基準點，以基準點為中心，比基準點小的放到左邊，比基準點大的放到右邊，全部放好後在原基準點兩邊各選另一個基準點，重複上述的動作，直到所有數字被排整齊為止。
-### [作業code](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/week4/quicksort_04113020.ipynb)
-### [code 網頁版](https://nbviewer.jupyter.org/github/okpersist/108_1_DSA/blob/master/week4/quicksort_04113020.ipynb)，時間複雜度O(nlogn)
-### [作業流程圖](https://github.com/okpersist/108_1_DSA/blob/master/week4/quicksort.svg)
+- 快速排序法：對於一串未排序數字，選一個數字基準點（推薦選中間數），比較基準點左右兩邊的數字，比基準點大的放基準點右邊，比基準點小的放基準點左邊。再從原本的基準點分成的左右兩堆中各選一個數字當基準點（也可選中間數），再重複比較數字大小改變位置。
+
+## ideas
+ - example: 4, 31, 7, 8, 1, 2
+1. 令 `pivot` = 以((數串的長度//2)-1)選出中間的數。 _*答案有帶小數點時，取最接近商比較小的最大整數_
+2. 把基準點左右兩堆的數字個別與基準點大小比
+    * 如果大於基準點，加入基準點的右邊的list
+    * 如果小於基準點，加入基準點的左邊的list
+    * 如果等於基準點，加入基準點的list
+4. 最後返回一個排序後整合的列表
 
 [🔗](#108_1_data-structure-and-algorithm)
 
