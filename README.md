@@ -3,11 +3,11 @@
 授課老師：蔡芸琤老師｜課堂助教：賴建郡／司福銘助教  
 
 # Repository簡介
-  * [About Me]()
-  * [<font color=#C89EC4>**學期心得**🎁<font>](https://github.com/okpersist/108_1_DSA/blob/master/week18/%E5%AD%B8%E6%9C%9F%E5%BF%83%E5%BE%97.md)
+  * [About Me](https://github.com/okpersist/108_1_DSA/blob/master/week18/%E9%99%B3%E6%B1%B6%E7%A9%97_Ellier%20Chen_2019Resume.pdf)
+  * [學期心得🎁](https://github.com/okpersist/108_1_DSA/blob/master/week18/%E5%AD%B8%E6%9C%9F%E5%BF%83%E5%BE%97.md)
   * [HW🖋](#hw)
   * [每周上課內容🖋](#Content)
-  * [每周學習速記🖋](https://hackmd.io/PFMjkciiRYuTuaYk77Be8Q?both)(Other related topics also put there.)
+  * [每周學習速記🖋](https://hackmd.io/PFMjkciiRYuTuaYk77Be8Q?both)
   * [CS50 筆記🖋](https://github.com/okpersist/108_1_DSA/tree/master/CS50)
   * [Codesignal 筆記🖋](https://github.com/okpersist/108_1_DSA/tree/master/Codesignal)
 
