@@ -67,7 +67,7 @@ HW | WK | TOPIC | 🔗
 - [Week 16](#week-16)
   - [Overview](#overview)
 - [Week 17](#week-17)
-  - [Final Exam & blockchain sharing]
+  - [Final Exam & blockchain sharing](#week-17)
 - Week 18: 放假~
 
 ---
