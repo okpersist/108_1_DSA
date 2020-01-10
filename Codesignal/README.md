@@ -14,6 +14,7 @@
 # Python
 ![](https://i.imgur.com/iiAQQjj.png)
 > 因為是回答問題沒有code所以用V呈現
+
 |Problem|Solved|
 |:------|:-----:|
 |Collections Truthness|V|
