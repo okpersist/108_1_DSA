@@ -6,6 +6,7 @@
   * [About Me](https://github.com/okpersist/108_1_DSA/blob/master/week18/%E9%99%B3%E6%B1%B6%E7%A9%97_Ellier%20Chen_2019Resume.pdf)
   * [學期心得🎁](https://github.com/okpersist/108_1_DSA/blob/master/week18/%E5%AD%B8%E6%9C%9F%E5%BF%83%E5%BE%97.md)
   * [HW🖋](#hw)
+  * [Leetcode🖋](https://github.com/okpersist/108_1_DSA/tree/master/Leetcode)
   * [每周上課內容🖋](#Content)
   * [上課內容補充🖋](https://hackmd.io/PFMjkciiRYuTuaYk77Be8Q?both)(把上課概述或相關連結放此處，主要上課內容在上個項目‵每週上課內容‵)
   * [CS50 筆記🖋](https://github.com/okpersist/108_1_DSA/tree/master/CS50)
